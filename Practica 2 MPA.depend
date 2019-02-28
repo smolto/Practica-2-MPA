@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1551360336 source:c:\users\santi\desktop\proyectos\practica 2 mpa\main.cpp
+1551388409 source:c:\users\santi\desktop\proyectos\practica 2 mpa\main.cpp
 	<iostream>
+	<stdlib.h>
 	<time.h>
 

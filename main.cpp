@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 #include <time.h>
 
 using namespace std;
@@ -6,6 +7,7 @@ using namespace std;
 void Insercion(int *, int);
 
 int main(){
+    int ticks;
     int n = 0;
     int *v;
     int semilla, ini, fin, centinela;
@@ -36,12 +38,16 @@ int main(){
     for (int i = ini;i <= fin; i++){
         cout << v[i] << " ";
     }
+    if (centinela == 1)
+        ticks = clock();
     Insercion(v,n);
     cout << "\nVector ordenado: ";
     for (int i = ini;i <= fin; i++){
         cout << v[i] << " ";
     }
-
+    if(centinela == 1){
+        cout << " \nTiempo (ms): " << ticks / CLOCKS_PER_SEC;
+    }
     return 0;
 }
 
